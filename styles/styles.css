@@ -9,6 +9,7 @@
     --light-rgb: 255, 255, 255;
     --dark-rgb: 68, 55, 55;
     --line: #dedede;
+    --tr: 0.5s;
 
 }
 
@@ -70,6 +71,7 @@ a{
     height: 3px;
     background-color: transparent;
     border-radius: 1.5px;
+    transition: var(--tr);
 }
 
 .nav-link:hover::after{
@@ -233,6 +235,7 @@ a{
     font-size: 14px;
     line-height: 129%;
     font-family: var(--nunito-sans);
+    transition: var(--tr);
 }
 
 .banner-btn:hover{
@@ -343,7 +346,8 @@ a{
     line-height: 129%;
     text-transform: uppercase;
     color: var(--dark);
-    text-decoration: none
+    text-decoration: none;
+    transition: var(--tr);    
 }
 
 .menu-btn::before{
@@ -356,6 +360,11 @@ a{
     background-size: contain;
     margin-right: 5px;
 }
+
+.menu-btn:hover{
+    background-color: var(--accent-dark);
+}
+
 
 /*footer*/
 
@@ -401,6 +410,11 @@ a{
     font-size: 15px;
     line-height: 160%;
     color: rgba(var(--light-rgb), .9);
+    transition: var(--tr);
+}
+
+.footer-link:hover{
+    color: var(--accent-light);
 }
 
 .footer-list{
@@ -434,6 +448,10 @@ a{
     line-height: 190%;
     text-transform: uppercase;
     color: var(--accent-light);
+    transition: var(--tr);
 }
 
+.footer-tel:hover{
+    color: var(--light);
+}
 
